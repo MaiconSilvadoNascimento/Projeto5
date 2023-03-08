@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Minha página</title>
+    <link rel="stylesheet" type="text/css" href="/public/css/styles.css">
+  </head>
+  <body>
+    <div id="carro-page">
+      <a href="/carros">Voltar</a>
+      <div class="container">
+        <h1>{{carro.modelo}}</h1>
+        <p>Este carro tem {{carro.km}} Kilometros.</p>
+        <div class="actions">
+          <a href="/carros/edit/{{carro.id}}" class="edit">Editar</a>
+          <form action="/carros/remove/{{carro.id}}" method="POST">
+            <input type="submit" value="Remover">
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+<section>
+    <h1>Cadastre um novo carro:</h1>
+    <form class="form" action="/carros/insertcarro" method="POST">
+        <div class="form-control">
+            <label for="title">Modelo:</label>
+            <input type="text" name="title" placeholder="Modelo do carro">
+        </div>
+        <div class="form-control">
+            <label for="placa">Placa:</label>
+            <input type="text" name="placa" placeholder="Qual a placa do carro?">
+        </div>
+        <div class="form-control">
+            <label for="km">Kilometragem:</label>
+            <input type="number" name="km" placeholder="Kilometragem do carro">
+        </div>
+        <input type="submit" value="Cadastrar">
+     </form>
+    <br>
+    <a href="/carros" class="btn">Carros Disponíveis</a>
+</section>
