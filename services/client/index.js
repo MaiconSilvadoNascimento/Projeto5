@@ -140,7 +140,7 @@ const conn = mysql.createConnection({
     port: '3307',
     user:'root',
     password: '',
-    database: 'locadora'
+    database: 'locadora_carros'
 });
 
 conn.connect(function(err) {
