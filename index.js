@@ -10,6 +10,7 @@ var port = 3000
 
 app.engine('handlebars', exphbs.engine());
 app.set('view engine', 'handlebars');
+app.use(express.static('public'))
 
 app.use(
     express.urlencoded({ 
@@ -18,7 +19,6 @@ app.use(
 
 
 //rotas 
-//rota raiz
 app.get('/', (req, res) => {
     res.render('home', { layout: false })
     })
@@ -536,14 +536,14 @@ app.post('/func/insertfunc', (req, res) => {
     })
   })
   
-//(Funcionario Wesley)  
+
     // conexao banco de dados
 const conn = mysql.createConnection({
     host: 'localhost',    
-    port: '3307',
+    //port: '3307',
     user:'root',
-    password: '',
-    database: 'locadora_carros'
+    password: '1234',
+    database: 'locadora'
     
     })
     

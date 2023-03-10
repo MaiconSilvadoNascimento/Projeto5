@@ -1,9 +1,71 @@
-<div>
-    <ul>
-        <li><a href="/cadastro_agnc">agencias</a></li>
-        <li><a href="/cadastro_client">clientes</a></li>
-        <li><a href="/cadastro_func">funcionarios</a></li>
-        <li><a href="/cadastro_car">carros</a></li>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocaCadu</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">LoCadu</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/cadastro_agnc">Agências</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/cadastro_client">Clientes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/cadastro_func">Funcionários</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/cadastro_car">Carros</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-    </ul>
-</div>
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Bem-vindo à LoCadu</h1>
+                <p>Encontre o carro perfeito para a sua viagem!</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                <img src="http://rankingfrotas.com.br/wp-content/uploads/2021/07/image-62.png" class="d-block w-100" alt="Imagem 1">
+                                </div>
+                                <div class="carousel-item">
+                                <img src="https://static.wixstatic.com/media/be65a1_2e5a309349b8440a88c8e3a272c2e423~mv2.png/v1/fill/w_560,h_254,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/frota.png" class="d-block w-100" alt="Imagem 2">
+                                </div>
+                                <div class="carousel-item">
+                                <img src="https://www.chevrolet.com.br/content/dam/chevrolet/mercosur/brazil/portuguese/index/cars/cars-subcontent/04-images/novo-onix-branco-summit.png?imwidth=960" class="d-block w-100" alt="Imagem 3">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Anterior</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Próximo</span>
+                            </a>
+                            </div>

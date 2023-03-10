@@ -1,8 +1,5 @@
-<!DOCTYPE html>
-<html>
-  <head>
+<head>
     <title>Minha página</title>
-    <link rel="stylesheet" type="text/css" href="/public/css/styles.css">
   </head>
   <body>
     <div id="carro-page">
@@ -20,3 +17,62 @@
     </div>
   </body>
 </html>
+
+
+<style>
+  body {
+    background-color: #f8f8f8;
+    font-family: Arial, sans-serif;
+  }
+
+  #carro-page {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  #carro-page a {
+    color: #333;
+    text-decoration: none;
+  }
+
+  .container {
+    margin-top: 30px;
+  }
+
+  h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .actions {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .edit,
+  input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .edit:hover,
+  input[type="submit"]:hover {
+    background-color: #555;
+  }
+</style>
